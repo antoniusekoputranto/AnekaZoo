@@ -6,16 +6,17 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-	"sync"
+	"sync" // For thread-safe in-memory store
 
 	"github.com/gorilla/mux"
 )
 
+// Animal represents the structure of an animal entry.
 type Animal struct {
-	ID    int    `json:"id"`
-	Name  string `json:"name"`
-	Class string `json:"class"`
-	Legs  int    `json:"legs"`
+	ID    int    `json:"id"`    // Unique ID of the animal
+	Name  string `json:"name"`  // Name of the animal (e.g., "lion")
+	Class string `json:"class"` // Class of the animal (e.g., "mammal")
+	Legs  int    `json:"legs"`  // Number of legs the animal has
 }
 
 // AnimalStore defines the interface for animal data operations.
