@@ -12,7 +12,7 @@ This is a Go (Golang) REST API application for managing AnekaZoo animal data, fu
 
 **Contents of go.mod:**
 
-module go-movies-crud
+module AnekaZoo
 
 go 1.24.4
 
