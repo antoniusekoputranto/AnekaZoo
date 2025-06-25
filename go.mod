@@ -1,4 +1,4 @@
-module go-movies-crud
+module AnekaZoo
 
 go 1.24.4
 
